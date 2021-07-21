@@ -30,14 +30,12 @@ body {
 }
 .zbozi {
     width: 670px;
-    background-color: yellow;
     position: relative;
     display: flex;
     border-radius: 10px;
     background-color: white;
     min-height: 440px;
 }
-
 
 .slogan {
     font-size: 16px;
@@ -71,12 +69,13 @@ body {
 }
 
 .detaily {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     padding: 30px;
     font-size: 14px;
     font-weight: 400;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 .bota {
@@ -98,25 +97,43 @@ body {
 
 .tlacitko {
     background-color: #f15f42;
-    border: none;
     color: white;
-    padding: 15px 32px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    border-radius: 10px;
+    
+}
+
+.tlacitko:hover,
+.tlacitko:focus {
+    background-color: #e29687;
 }
 
 .velikosti {
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-grow: 1;
-    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    align-items: center;
+    align-content: flex-start;
+}
+/* .velikosti li a {
+
 }
 
-ul {
+.velikosti:hover,
+.velikosti:flex {
+
+}
+*/
+ul.velikosti {
     padding: 0;
     margin: 0;
 }
@@ -129,9 +146,8 @@ ul {
 }
 
 .vybrana {
-    color: #f15f42;
     border: 1px solid;
     border-radius: 50%;
+    color: #f15f42;
     padding: 4px;
-
 }
